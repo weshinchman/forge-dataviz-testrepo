@@ -1,10 +1,6 @@
-# forge-dataviz-iot-reference-app
 
-![Application](docs/dataviz-intro.jpg)
 
-This sample application demonstrates the functionality of the Forge Data Visualization extension. To learn more about the extension and the features it offers, see the [Data Visualization Extension Developer's Guide](https://forge.autodesk.com/en/docs/dataviz/v1/developers_guide/introduction/overview/).
-
-## Directory Structure
+# Structure
 
     .
     ├── assets                  # Static svg and png files
@@ -19,31 +15,7 @@ This sample application demonstrates the functionality of the Forge Data Visuali
     ├── LICENSE
     └── README.md
 
-## Setup
 
-### Prerequisite
-
-To successfully run this Reference Application, you need a _Forge account_. If you do not have a Forge account, see [Creating your Forge account](https://learnforge.autodesk.io/#/account/).
-
-### Installing and Running the Reference Application
-
-To install and run the Reference Application, see the [Data Visualization Extension QuickStart](https://forge.autodesk.com/en/docs/dataviz/v1/developers_guide/quickstart/).
-
-## Advanced Users
-
-### Customization options
-
-If you'd like to add your own customization on top of the Reference Application baseline, you can modify the following files:
-
--   _custom.scss_ : Override or add custom styling to your application.
--   _client/pages/CustomPage.jsx_ : Create a custom page for your application.
--   _server/CustomRouter.js_ : Override or add new API routes.
-
-## Further Reading
-
-Developer's Guide - https://forge.autodesk.com/en/docs/dataviz/v1/developers_guide
-API Reference - https://forge.autodesk.com/en/docs/dataviz/v1/reference/Core/
-
-## License
+# License
 
 This sample app uses an [MIT License](LICENSE)
