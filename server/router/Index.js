@@ -15,6 +15,7 @@ const { HubsApi, ProjectsApi, FoldersApi, ItemsApi, UserProfileApi } = require('
 let SiteConfig = undefined;
 
 if (process && !process.env.LAMBDA) {
+    // console.log('local env')
     var env = process.env.ENV || "local";
     var buildNumber = process.env.BUILD_NUMBER || "1";
     SiteConfig = require("../../shared/config/SiteConfig.js")(env, buildNumber);
@@ -22,10 +23,16 @@ if (process && !process.env.LAMBDA) {
     SiteConfig = require("../../shared/config/SiteConfig.js")(ENV, BUILD_NUMBER);
 }
 
-if (process.env.ENV == "local") {
+if (true) {
+    // process.env.ENV == "local"
+    console.log('LOCAL ENV');
+    console.log('LOCAL ENV');
+
     require("dotenv").config({
         path: __dirname + "/../.env",
     });
+    console.log(process.env.FORGE_CLIENT_ID);
+
 }
 
 var ApplicationContext = require("../../shared/config/ApplicationContext.js");
